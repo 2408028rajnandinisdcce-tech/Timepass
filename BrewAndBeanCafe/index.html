@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew and Bean Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <img src="images/clogo.png" alt="Brew and Bean Logo" class="logo-img">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Visit Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+      <p class="hero-tag">Crafted with Passion</p>
+      <h1>Where Every Cup<br><span>Tells a Story</span></h1>
+      <p class="hero-sub">Handpicked beans. Slow roasted. Brewed to perfection.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#about" class="btn-glass">Our Story</a>
+      </div>
+      <div class="hero-hours" data-aos="fade-up" data-aos-delay="600">
+        <i class="fas fa-clock"></i> Open Daily - 7 AM to 9 PM
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+        <img src="images/about.jpg" alt="Coffee being prepared">
+        <div class="about-badge">
+          <span class="badge-number">12</span>
+          <span class="badge-text">Years of<br>Excellence</span>
+        </div>
+      </div>
+      <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+        <p class="section-tag">Our Story</p>
+        <h2>A Love Letter to <span>Good Coffee</span></h2>
+        <p class="about-desc">
+          What started as a tiny kiosk in 2014 has grown into the neighbourhood's favourite spot. We source single-origin beans from small farms in Ethiopia, Colombia and Guatemala, roast them in small batches, and brew each cup with care.
+        </p>
+        <p class="about-desc">
+          We believe great coffee does not need to be complicated - just honest, thoughtful, and made by people who genuinely love what they do.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="12000">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Cups Monthly</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Bean Varieties</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span><span class="stat-plus">&nbsp;</span>
+            <span class="stat-label">Roast Profiles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu">
+    <div class="container">
+      <p class="section-tag center" data-aos="fade-up">What We Serve</p>
+      <h2 class="center" data-aos="fade-up">Our <span>Menu</span></h2>
+      <p class="section-desc center" data-aos="fade-up">From classic espressos to seasonal specials - there is something for every palate.</p>
+
+      <div class="menu-grid">
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="menu-card-img">
+            <img src="images/menu1.jpg" alt="Signature Latte">
+            <span class="menu-price">₹350</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Signature Latte</h3>
+            <p>Smooth espresso, steamed oat milk, hint of vanilla, finished with latte art.</p>
+            <div class="menu-tags">
+              <span><i class="fas fa-fire"></i> Popular</span>
+              <span><i class="fas fa-leaf"></i> Oat Milk</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="menu-card-img">
+            <img src="images/menu2.jpg" alt="Cold Brew">
+            <span class="menu-price">₹300</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Cold Brew</h3>
+            <p>Steeped for 18 hours. Bold, smooth, and served over hand-cut ice.</p>
+            <div class="menu-tags">
+              <span><i class="fas fa-snowflake"></i> Iced</span>
+              <span><i class="fas fa-clock"></i> 18hr Brew</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-card-img">
+            <img src="images/menu3.jpg" alt="Caramel Mocha">
+            <span class="menu-price">₹380</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Caramel Mocha</h3>
+            <p>Rich chocolate, buttery caramel, bold espresso, crowned with whipped cream.</p>
+            <div class="menu-tags">
+              <span><i class="fas fa-heart"></i> Indulgent</span>
+              <span><i class="fas fa-star"></i> Best Seller</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="menu-card-img">
+            <img src="images/menu4.jpg" alt="Pour Over">
+            <span class="menu-price">₹320</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Pour Over</h3>
+            <p>Single-origin beans, hand-poured to highlight bright, fruity notes.</p>
+            <div class="menu-tags">
+              <span><i class="fas fa-hand-holding-droplet"></i> Single Origin</span>
+              <span><i class="fas fa-seedling"></i> Light Roast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section id="why">
+    <div class="container">
+      <p class="section-tag center" data-aos="fade-up">Why Choose Us</p>
+      <h2 class="center" data-aos="fade-up">Not Just <span>Another Cup</span></h2>
+      <p class="section-desc center" data-aos="fade-up">We obsess over the details so you can just enjoy the moment.</p>
+
+      <!-- This div is where React builds the 3 cards below -->
+      <div id="why-root"></div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery">
+    <div class="container">
+      <p class="section-tag center" data-aos="fade-up">Inside Brew and Bean</p>
+      <h2 class="center" data-aos="fade-up">Our <span>Gallery</span></h2>
+      <p class="section-desc center" data-aos="fade-up">Snapshots from our space - the warmth, the craft, the community.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="0">
+          <img src="images/gallery1.jpg" alt="Coffee beans">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/gallery2.jpg" alt="Latte art">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="images/gallery3.jpg" alt="Cafe interior">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item wide" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/gallery4.jpg" alt="Barista at work">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="250">
+          <img src="images/gallery5.jpg" alt="Coffee cup">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/gallery6.jpg" alt="Cafe vibes">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials">
+    <div class="container">
+      <p class="section-tag center" data-aos="fade-up">What People Say</p>
+      <h2 class="center" data-aos="fade-up">Honest <span>Reviews</span></h2>
+
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card active" data-aos="fade-up" data-aos-delay="0">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"The best cold brew I have had, hands down. I drive 20 minutes just to get my fix. Worth every mile."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <strong>Ananya R.</strong>
+              <span>Regular since 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Such a cozy place to work remotely. The WiFi is fast, the coffee is better, and nobody rushes you out."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <strong>Mayank T.</strong>
+              <span>Remote worker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"The pour-over here opened my eyes to what coffee can actually taste like. Absolute gem of a cafe."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <strong>Sarah K.</strong>
+              <span>Coffee enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-dots" id="testimonialDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+        <p class="section-tag">Get In Touch</p>
+        <h2>Come Say <span>Hi</span></h2>
+        <p>We would love to see you. Drop by, say hello, or reach out for bookings and events.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <strong>Address</strong>
+              <span>42 Coffee Lane, Bean District, Mumbai 400001</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <span>+91 70669 55308</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>hello@brewandbean.cafe</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon to Sun: 7:00 AM - 9:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap" data-aos="fade-left" data-aos-duration="1000">
+        <p class="form-note">For inquiries, call us at: <strong>+91 70669 55308</strong></p>
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">Your Name</label>
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder=" " required>
+            <label for="phone">Phone Number</label>
+            <span class="error-msg" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <select id="subject" required>
+              <option value="" disabled selected>Select Subject</option>
+              <option>General Inquiry</option>
+              <option>Reservation</option>
+              <option>Private Event</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <img src="images/clogo.png" alt="Brew and Bean Logo" class="logo-img">
+        </a>
+        <p>Crafting warm moments and great coffee since 2014. Every cup is a small celebration.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Visit</h4>
+        <ul>
+          <li><i class="fas fa-location-dot"></i> 42 Coffee Lane, Mumbai</li>
+          <li><i class="fas fa-phone"></i> +91 70669 55308</li>
+          <li><i class="fas fa-envelope"></i> hello@brewandbean.cafe</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Brew and Bean Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- React libraries (from CDN) -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    // --- React: builds the "Why Choose Us" cards ---
+    function FeatureCard(props) {
+      return (
+        <div className={"why-card " + (props.featured ? "featured" : "")}>
+          <div className="why-icon"><i className={props.icon}></i></div>
+          <h3>{props.title}</h3>
+          <p>{props.text}</p>
+        </div>
+      );
+    }
+
+    // Data for the three cards
+    const features = [
+      { icon: "fas fa-fire-flame-curved", title: "Small-Batch Roasted", text: "We roast beans in small batches every week to ensure peak freshness and flavour in every single cup we serve." },
+      { icon: "fas fa-handshake", title: "Ethically Sourced", text: "We partner directly with farmers, paying fair prices that support sustainable growing practices and local communities.", featured: true },
+      { icon: "fas fa-mug-saucer", title: "Brewed with Care", text: "From water temperature to extraction time - every variable is dialled in to bring out the best in each bean." }
+    ];
+
+    function FeatureList() {
+      return (
+        <div className="why-grid">
+          {features.map(function(feature) {
+            return <FeatureCard key={feature.title} icon={feature.icon} title={feature.title} text={feature.text} featured={feature.featured} />;
+          })}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("why-root")).render(<FeatureList />);
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
